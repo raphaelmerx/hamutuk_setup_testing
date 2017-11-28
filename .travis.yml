@@ -6,6 +6,10 @@ before_install:
   - npm install -g 'cordova@6.5.0'
   - npm install -g 'grunt-cli@1.2.0' && npm install
   - bower install
+    # copied from the Troubleshooting section
+  - rm -rf platforms/android
+  - cordova platform add android@6.1.2
+  - git checkout -- platforms
   - cordova requirements
 script:
     - cordova build
