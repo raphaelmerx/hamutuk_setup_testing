@@ -1,7 +1,6 @@
 os: osx
 osx_image: xcode9.1
 before_install:
-  - brew update  # node already installed
   - npm install -g bower 'cordova@6.5.0' grunt-cli
   - npm install
   - bower install
