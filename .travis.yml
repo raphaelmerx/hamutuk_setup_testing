@@ -2,9 +2,8 @@ os: osx
 osx_image: xcode9.1
 before_install:
   - brew update  # node already installed
-  - npm install -g 'bower@1.7.9'
-  - npm install -g 'cordova@6.5.0'
-  - npm install -g 'grunt-cli@1.2.0' && npm install
+  - npm install -g bower 'cordova@6.5.0' grunt-cli
+  - npm install
   - bower install
     # Install Android development tools
   - brew install https://gist.github.com/raphaelmerx/d08739b734001563365dd1a61e9c6660/raw/38a3696b37791fd0d917d5118aced5ef8304ad0f/android-sdk.rb
