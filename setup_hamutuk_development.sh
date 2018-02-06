@@ -5,7 +5,9 @@ npm install
 bower install
 
 # Install Android development tools
-brew install https://gist.github.com/raphaelmerx/d08739b734001563365dd1a61e9c6660/raw/38a3696b37791fd0d917d5118aced5ef8304ad0f/android-sdk.rb
+brew tap catalpainternational/catalpa
+(brew tap-info catalpainternational/catalpa | grep 'unpinned') && brew tap-pin catalpainternational/catalpa
+brew install android-sdk
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
 # have to separate all android installs to "echo y" for each
