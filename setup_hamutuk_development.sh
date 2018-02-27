@@ -21,7 +21,6 @@ echo y | android update sdk --no-ui --all --filter "platform-tools"
 rm -rf platforms/android
 cordova platform add android@6.4.0
 git checkout -- platforms
-rm -f platforms/android/libs/android-support-v4.jar
 
 cordova requirements
 cordova build
